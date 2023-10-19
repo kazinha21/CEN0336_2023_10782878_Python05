@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+
+#Criando um dicionário com minhas coisas favoritas
+fav_dict = { 'Livro' : 'Harry Potter' , 'Canção' : 'The archer', 'Árvore' : 'Ipê', 'Organismo': 'Borboleta' } #Organismo favorito adicionado ao dicionário
+
+#Imprimindo meu dicionário favorito
+print(f'Dicionário das minhas coisas favoritas com o organismo favorito adicionado: {fav_dict}')
+
+#Imprimindo meu livro favorito
+print(f'Meu livro favorito é: {fav_dict["Livro"]}')
+
+#Imprimindo meu livro favorito com uma variável na chave
+fav_thing = 'Livro'
+print(f'Meu livro favorito é (com a chave fav_thing): {fav_dict[fav_thing]}')
+
+#Imprimindo minha árvore favorita
+print(f'Minha árvore favorita é: {fav_dict["Árvore"]}')
+
+#Tornando 'Organismo' o novo valor da chave 'fav_thing'
+fav_thing = 'Organismo'
+print(f'Meu organismo favorito é (novo valor da chave fav_thing): {fav_dict[fav_thing]}')
+
+#Obtendo um valor da linha de comando para fav_thing
+fav_thing = input("Enter your input: ")
+print(fav_dict[fav_thing])
+
+#Alterando o valor do meu organismo favorito 
+fav_dict['Organismo'] = 'Cachorro'
+print(f'Dicionário das minhas coisas favoritas com o organismo favorito alterado: {fav_dict}')
+
+

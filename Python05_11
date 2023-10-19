@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+#Criando os conjuntos
+SetA = {3, 14, 15, 9, 26, 5, 35, 9}
+SetB = {60 ,22 ,14 ,0 , 9}
+
+#Intersecção entre os dois conjuntos
+inters = SetA & SetB
+print(f'A intersecção entre os dois conjuntos é: {inters}')
+
+#Diferença entre os dois conjuntos
+difer = SetA - SetB
+print(f'A diferença entre os dois conjuntos é: {difer}')
+
+#União entre os dois conjuntos
+uniao = SetA | SetB
+print(f'A união entre os dois conjuntos é: {uniao}')
+
+#Diferença simétrica entre os dois conjuntos
+simetr = SetA ^ SetB
+print(f'A diferença simétrica entre os dois conjuntos é: {simetr}')
+
