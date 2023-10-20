@@ -12,7 +12,7 @@ seq = 'GAACTCCAAAAATGAAAACATAGTAGCAATCAAAGCATCCCACTATTTTTTGTCTCTCGTTTCATTAGCGTTG
 
 for x in DNA:
     nt_comp[x] = seq.count(x)
-    print (f'A quantidade de {x} é {nt_comp}') #Script alterado para armazenar cada contagem em um dicionário e #Calculando e relatando a composição de nucleotídeos 
+    print (f'A quantidade de {x} é {nt_comp[x]}') #Script alterado para armazenar cada contagem em um dicionário e #Calculando e relatando a composição de nucleotídeos 
 
 #Calculando e relatando o conteúdo de GC
 GC = ((nt_comp['G'] + nt_comp['C'])/(len(seq)))*100
